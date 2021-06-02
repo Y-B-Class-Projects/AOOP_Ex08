@@ -20,7 +20,7 @@ public class RunningTime {
     public void before(JoinPoint jp) throws Throwable{
         System.out.println("Running sort in " + jp.getSignature().getName() + "." +
                 jp.getThis().getClass().getSimpleName() + " with array size "
-        + ((Integer[])jp.getArgs()[0]).length);
+                + ((Integer[])jp.getArgs()[0]).length);
         startTime = System.currentTimeMillis();
 
     }
@@ -29,8 +29,8 @@ public class RunningTime {
     public void after(JoinPoint jp) throws Throwable{
         long endTime = System.currentTimeMillis();
         System.out.println("Function sort in " + jp.getSignature().getName() + "." +
-                  jp.getThis().getClass().getSimpleName() +" took "
-        + (endTime - startTime) + " ms");
+                jp.getThis().getClass().getSimpleName() +" took "
+                + (endTime - startTime) + " ms");
     }
 
 }
