@@ -28,6 +28,15 @@
     </content>
     <orderEntry type="jdk" jdkName="openjdk-15" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/aspectj1.9/lib/aspectjrt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se-core:3.1.5.SP1" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.environment:weld-environment-common:3.1.5.SP1" level="project" />
@@ -51,7 +60,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/aspectj1.9/lib/aspectjrt.jar!/" />
+          <root url="jar://$USER_HOME$/aspectj1.9/lib/aspectjrt.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
