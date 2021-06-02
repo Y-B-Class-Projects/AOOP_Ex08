@@ -1,11 +1,17 @@
 package sortingClean;
+import javax.inject.Inject;
 import java.util.Random;
 
 // TODO: Add dependency injection and annotations to this file
 public class AlgorithmRunner {
-    SortingAlgorithm<Integer> quadraticAlgorithm = new BubbleSort();
-    SortingAlgorithm<Integer> nlognAlgorithm = new QuickSort();
-    int numberOfElements = 100000;
+
+    @Inject
+    @QuadraticSortClass SortingAlgorithm<Integer> quadraticAlgorithm;
+    @Inject
+    @nlognSortClass SortingAlgorithm<Integer> nlognAlgorithm;
+    @Inject
+    int numberOfElements;
+
     public void runAlgorithms(){
         Random rand = new Random();
         Integer[] ints = rand.ints(1,Integer.MAX_VALUE)

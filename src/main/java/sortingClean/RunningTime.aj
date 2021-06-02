@@ -13,7 +13,7 @@ public class RunningTime {
 
     private long startTime;
 
-    @Pointcut("execution(void *.*.sort(..))")
+    @Pointcut("execution(void *.*.sort*(..))")
     private void selectSort(){}
 
     @Before("selectSort()")
